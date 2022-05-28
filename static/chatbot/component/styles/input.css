@@ -1,0 +1,106 @@
+/* style user input field */
+.bubble-container .input-wrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	color: #2c2c2c;
+}
+.bubble-container .input-wrap textarea {
+	width: calc(100%);
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	color: #2c2c2c;
+	font-size: 1em;
+	letter-spacing: .5px;
+	font-weight: 400;
+	margin: 10px;
+	border-radius: 15px;
+	border: none;
+	padding: 10px 15px;
+	outline: none;
+	box-shadow: 0 0 0 1px #d0d0d0 inset;
+	line-height: 1.25em;
+}
+.bubble.reply-freeform {
+	margin: 0;
+}
+
+.bubble-button{
+	width: 340px !important;
+}
+
+
+.bubble.reply.reply-freeform.say .bubble-content .bubble-button {
+	margin-top: 1px;
+	text-align: left;
+}
+.bubble.reply.say.bubble-hidden {
+	margin: 0;
+	transform: scale(0);
+	height: 0;
+}
+
+
+.bubble-container .input-wrap {
+	-webkit-animation: up 0.35s cubic-bezier(0.36, -0.04, 0.15, 1.64) 0.5s both;
+			animation: up 0.35s cubic-bezier(0.36, -0.04, 0.15, 1.64) 0.5s both;
+	border-top: 4px solid #453a94;
+	width: 100%;
+	z-index: 30;
+	flex: none;
+	height: 14vh;
+	max-height: 100px;
+	background: #908ac0;
+	display: flex;
+	justify-content: stretch;
+	transition: background 0.3s ease;
+  }
+  .bubble-container .input-wrap textarea {
+	border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+	font-weight: 700;
+	flex: auto;
+	background: transparent;
+	border: none;
+	font-family: "Inconsolata";
+	color: white;
+	font-size: 1rem;
+  }
+  .bubble-container .input-wrap *::-moz-placeholder {
+	color: #db0035;
+  }
+  .bubble-container .input-wrap *:-ms-input-placeholder {
+	color: #db0035;
+  }
+  .bubble-container .input-wrap *::placeholder {
+	color: #db0035;
+  }
+  .bubble-container .input-wrap .input-submit {
+	margin: 2vh;
+	background: #ff7871;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 4px 4px #db0035;
+	width: 10vh;
+	position: relative;
+  }
+  .bubble-container .input-wrap .input-submit:after {
+	content: "";
+	width: 0.5rem;
+	height: 0.5rem;
+	border: 5px solid white;
+	border-left: 0;
+	border-bottom: 0;
+	transform: rotate(45deg);
+	position: absolute;
+	top: calc(50% - 0.5rem);
+	left: calc(50% - 0.5rem);
+  }
