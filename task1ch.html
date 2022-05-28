@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Say no to scams</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="./static/scam/img/favicon.png" rel="icon">
+  <link href="./static/scam/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="./static/scam/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="./static/scam/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./static/scam/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="./static/scam/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="./static/scam/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="./static/scam/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="./static/scam/css/style.css" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+  <link rel="manifest" href="./static/manifest.webmanifest">
+
+  
+  <script type="text/javascript">
+    function get_user_url(base) {
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          window.location.href = '/' + base + '/' + user.uid;
+        } else {
+          alert("Please log in to view!")
+        }
+      })
+    }
+  </script>
+</head>
+
+<body>
+
+  <header id="header">
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="#header" class="scrollto"><img width="100" height="132"
+            src="https://www.lionsbefrienders.org.sg/wp-content/uploads/2021/01/LB-Logo-White-100x132.png"
+            class="custom-logo" alt="" loading="lazy"
+            srcset="https://www.lionsbefrienders.org.sg/wp-content/uploads/2021/01/LB-Logo-White-100x132.png 100w, https://www.lionsbefrienders.org.sg/wp-content/uploads/2021/01/LB-Logo-White.png 152w"
+            sizes="(max-width: 100px) 100vw, 100px"></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li><a href="./index_ch.html">首页
+</a></li>
+          <li><a href="./chatbotch.html">模拟</a></li>
+          <li><a href="./task1ch.html">任务</a></li>
+          <li class="notranslate"><a href="./index.html">English</a></li>
+
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header>
+  <div class="main-app">
+
+    <div class="header-bar">
+      <div class="header-bar-text">课程
+ 1</div>
+    </div>
+    <div class="row">
+
+      <div class="col-lg-8 offset-lg-2">
+        <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+        <link href="./static/quiz/style.css" rel="stylesheet" />
+        <br>
+
+        <div id="video-container">
+          <video id="my-video" class="video-js" controls preload="auto" width="800" height="500" data-setup="{}">
+            <source src="./static/videos/chinese/1.mp4" type="video/mp4" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+          </video>
+        </div>
+
+        <div class="quiz">
+
+
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+              <h2 id="question">Question text</h2>
+              <ul>
+                <li>
+                  <input type="radio" name="answer" id="a" class="answer">
+                  <label for="a" id="a_text"> Question</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="b" class="answer">
+                  <label for="b" id="b_text"> Question</label>
+                </li>
+
+              </ul>
+            </div>
+            <button id="submit">课程
+</button>
+          </div>
+          <a id="complete_course" href="./task2ch.html" name="btn" class="button-30"> 完成课程
+          </a>
+
+          <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+          <script src="./static/quiz/chinese/q1.js"></script>
+          <script src="./static/quiz/quizch.js"></script>
+
+          <br>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+ 
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="./static/scam/lib/jquery/jquery.min.js"></script>
+  <script src="./static/scam/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="./static/scam/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./static/scam/lib/easing/easing.min.js"></script>
+  <script src="./static/scam/lib/mobile-nav/mobile-nav.js"></script>
+  <script src="./static/scam/lib/wow/wow.min.js"></script>
+  <script src="./static/scam/lib/waypoints/waypoints.min.js"></script>
+  <script src="./static/scam/lib/counterup/counterup.min.js"></script>
+  <script src="./static/scam/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="./static/scam/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="./static/scam/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="./static/scam/contactform/contactform.js"></script>
+
+  <script src="./static/scam/js/main.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+  <script src="./static/js/fireBase.js"></script>
+  <script src="./static/js/remove_login.js"></script>
+  <script src="./static/js/pwa.js"></script>
+</body>
+
+</html>
